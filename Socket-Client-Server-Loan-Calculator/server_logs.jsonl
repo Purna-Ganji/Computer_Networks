@@ -1,0 +1,15 @@
+{"ts_utc":"2025-08-17T21:35:10.275302+00:00","peer":{"ip":"127.0.0.1","port":60333},"request":{"cmd":"PING"},"response":{"ok":true,"reply":"PONG"}}
+{"ts_utc":"2025-08-17T21:35:27.281478+00:00","peer":{"ip":"127.0.0.1","port":60336},"request":{"cmd":"LOAN","username":"phoenix","loan_amount":150000.0,"years":30,"annual_rate":4.5},"response":{"ok":true,"monthly_payment":760.03,"total_payment":273610.07}}
+{"ts_utc":"2025-08-17T21:35:59.593366+00:00","peer":{"ip":"127.0.0.1","port":60344},"request":{"cmd":"SET","key":"user.name","value":"Phoenix"},"response":{"ok":true}}
+{"ts_utc":"2025-08-17T21:36:08.858165+00:00","peer":{"ip":"127.0.0.1","port":60346},"request":{"cmd":"GET","key":"user.name"},"response":{"ok":true,"value":"Phoenix"}}
+{"ts_utc":"2025-08-17T21:36:13.488973+00:00","peer":{"ip":"127.0.0.1","port":60350},"request":{"cmd":"KEYS"},"response":{"ok":true,"keys":["user.name"]}}
+{"ts_utc":"2025-08-17T21:36:19.049268+00:00","peer":{"ip":"127.0.0.1","port":60351},"request":{"cmd":"CLEAR"},"response":{"ok":true}}
+{"ts_utc":"2025-09-07T00:06:57.250512+00:00","peer":{"ip":"127.0.0.1","port":49706},"request":{"cmd":"PING"},"response":{"ok":true,"reply":"PONG"}}
+{"ts_utc":"2025-09-07T00:07:46.746738+00:00","peer":{"ip":"127.0.0.1","port":49716},"request":{"cmd":"LOAN","username":"Phoenix","loan_amount":150000.0,"years":30,"annual_rate":4.5},"response":{"ok":true,"monthly_payment":760.03,"total_payment":273610.07}}
+{"ts_utc":"2025-09-07T00:08:09.195469+00:00","peer":{"ip":"127.0.0.1","port":49720},"request":{"cmd":"SET","key":"user.name","value":"Phoenix"},"response":{"ok":true}}
+{"ts_utc":"2025-09-07T00:08:15.834710+00:00","peer":{"ip":"127.0.0.1","port":49721},"request":{"cmd":"GET","key":"user.name"},"response":{"ok":true,"value":"Phoenix"}}
+{"ts_utc":"2025-09-07T00:23:29.267216+00:00","peer":{"ip":"127.0.0.1","port":53439},"request":{"cmd":"KEYS"},"response":{"ok":true,"keys":[]}}
+{"ts_utc":"2025-09-07T00:24:04.443196+00:00","peer":{"ip":"127.0.0.1","port":53445},"request":{"cmd":"SET","key":"Darth-Nemesis","value":"Phoenix"},"response":{"ok":true}}
+{"ts_utc":"2025-09-07T00:24:07.868305+00:00","peer":{"ip":"127.0.0.1","port":53448},"request":{"cmd":"KEYS"},"response":{"ok":true,"keys":["Darth-Nemesis"]}}
+{"ts_utc":"2025-09-07T00:24:30.162953+00:00","peer":{"ip":"127.0.0.1","port":53467},"request":{"cmd":"GET","key":"Darth-Nemesis"},"response":{"ok":true,"value":"Phoenix"}}
+{"ts_utc":"2025-09-07T00:58:50.347652+00:00","peer":{"ip":"127.0.0.1","port":57006},"request":{"cmd":"LOAN","username":"Phoenix","loan_amount":1000.0,"years":30,"annual_rate":4.0},"response":{"ok":true,"monthly_payment":4.77,"total_payment":1718.7}}

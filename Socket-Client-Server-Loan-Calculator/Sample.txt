@@ -1,0 +1,56 @@
+//sample output for TCP:> loan Phoenix(Username) 150000(amount) 30() 4.5
+{
+  "ok": true,
+  "monthly_payment": 760.03,
+  "total_payment": 273610.07
+}
+
+
+//TCP server:
+PS C:\Users\pg84s\GitHub\Socket-Client-Server-Loan-Calculator> python TCP_loan_server.py --host 127.0.0.1 --port 13000
+Serving on ('127.0.0.1', 13000)
+
+//TCP client:
+PS C:\Users\pg84s\GitHub\Socket-Client-Server-Loan-Calculator> python TCP_loan_client.py interactive
+Commands: PING | LOAN <username> <amount> <years> <rate> | SET <k> <v...> | GET <k> | DEL <k> | KEYS | CLEAR | EXIT
+> ping
+{
+  "ok": true,
+  "reply": "PONG"
+}
+> loan Phoenix 150000 30 4.5
+{
+  "ok": true,
+  "monthly_payment": 760.03,
+  "total_payment": 273610.07
+}
+> set user.name Phoenix
+{
+  "ok": true
+}
+> get user.name
+{
+  "ok": true,
+  "value": "Phoenix"
+}
+> keys
+{
+  "ok": true,
+  "keys": []
+}
+> set Darth-Nemesis Phoenix
+{
+  "ok": true
+}
+> keys
+{
+  "ok": true,
+  "keys": [
+    "Darth-Nemesis"
+  ]
+}
+> get Darth-Nemesis
+{
+  "ok": true,
+  "value": "Phoenix"
+}
